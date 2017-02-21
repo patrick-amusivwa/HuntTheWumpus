@@ -73,7 +73,7 @@ Remember, the percepts don’t tell you where the hazard or gold is, just that i
 
 * The `Event` class **must be abstract** (i.e. it must contain purely virtual functions), and the `Wumpus`, `Bats`, `Pit`, and `Gold` classes should all be derived from `Event`.  Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. Your design of the `Event` class should reflect this.
 
-* **You must use the `Event` classes polymorphically.**  In other words, your room class may only contain a member of the `Event` class but not members of the `Wumpus`, `Bats`, `Pit`, or `Gold` classes.
+* **You must use the `Event` classes polymorphically.**  In other words, your `Room` class may only contain a member of the `Event` class but not members of the `Wumpus`, `Bats`, `Pit`, or `Gold` classes.
 
 * Each `Room` contains *at most* one `Event`, but it may not contain any `Event`.  The design of your `Room` class should reflect this.
 
