@@ -65,6 +65,7 @@ void Room::print_event_response(){
 	cout<< event->event_text()<<endl;
 
 }
+
 void Room::print_event_text(){
 
 	cout<< event->event_response()<<endl;

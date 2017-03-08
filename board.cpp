@@ -488,9 +488,9 @@ void Board::rand_events(){
 		event_array[i] = event[i];
 	}
 	
-	for(int i =0 ; i < 7; i++){
-		cout << "Event array: " << event_array[i] << endl;
-}
+//	for(int i =0 ; i < 7; i++){
+//		cout << "Event array: " << event_array[i] << endl;
+//}
 }
 	
 
