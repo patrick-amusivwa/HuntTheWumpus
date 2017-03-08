@@ -22,6 +22,20 @@ Board::Board(){
 }
 
 
+
+
+/**************************************
+ * Function: Board(int size)
+ * Description: initializeds the board for the player to play on
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ *******************************/
+
+
+
+
+
 Board::Board(int size){
 /*	size_of_table=size;
 	std::vector<vector<int> > tables(size);
@@ -61,6 +75,21 @@ Board::Board(int size){
 	take_gold = 0;
 
 }
+
+
+
+/**************************************
+ * Function: set_direction()
+ * Description: moves the player around the board
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ ******************************/
+
+
+
+
+
 
 int Board::set_direction(){
 	int place;
@@ -131,6 +160,17 @@ int Board::set_direction(){
 	}
 	return 0;
 }				
+
+
+
+/**************************************
+ * Function: arrow_move()
+ * Description: arrow shoots out with at most 3 distance
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ *******************************/
+
 
 
 
@@ -310,6 +350,20 @@ int Board::arrow_move(){
 
 }
 
+
+
+/**************************************
+ * Function: wumpus_move()
+ * Description: moves wumpus if arrow shot 75%
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ *******************************/
+
+
+
+
+
 void Board::wumpus_move(){
 	int wump_move = rand() % 4;
 	if(wump_move == 3){
@@ -386,6 +440,14 @@ for(int i = 0; i < 7;i++){
 
 
 
+/**************************************
+ * Function: rand_events()
+ * Description: sets event to an array
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ **************************************/
+
 
 
 void Board::rand_events(){
@@ -432,6 +494,14 @@ void Board::rand_events(){
 }
 	
 
+/**************************************
+ * Function: in_board()
+ * Description: checks if persson is on board
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ ******************************/
+
 int Board::in_board(int r, int c){
 	if(r<0||r>size_of_table-1|| c<0|| c>size_of_table-1){
 		return 0;
@@ -440,6 +510,18 @@ int Board::in_board(int r, int c){
 		return 1;
 }
 }
+
+
+/**************************************
+ * Function: win()
+ * Description: returns win when player gets all the win conditions
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ ******************************/
+
+
+
 
 int Board::win(){
 	if(wumpus_die == 1 && take_gold == 1 && player_spot == event_array[0]){
@@ -598,6 +680,16 @@ void Board::print_map(){
 }
 
 
+/**************************************
+ * Function: start_event()
+ * Description: sets the event on the board
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ *******************************/
+
+
+
 
 void Board::start_event(){
 	int place = rope_1;
@@ -690,6 +782,18 @@ void Board::start_event(){
         }
 
 }
+
+
+/**************************************
+ * Function: event_check()
+ * Description: checks if the player is on the event
+ * Parameters: none
+ * Pre-Conditions: none
+ * Post-Conditions: none
+ *******************************/
+
+
+
 
 int Board::event_check(){
 //	Room r;
