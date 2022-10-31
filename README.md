@@ -1,11 +1,4 @@
-# Assignment 4 - Hunt the Wumpus
-**Due by 11:59pm on Monday, 3/6/2017**
 
-**Demos due by 11:59pm on Friday 3/17/2017**
-
-The goal of this assignment is to start working with polymorphism and C++ template classes from the STL.  Follow the directions below, and make sure your source code files (**no executable files, `.o` files, or other crufty stuff**) are committed and pushed back into your repository on GitHub to earn credit for the assignment.
-
-## The Hunt the Wumpus game
 
 The object of Hunt the Wumpus is to guide an adventurer to kill the Wumpus, find its hidden gold, and escape alive. The Wumpus lives in a large cave of rooms arranged in a grid, where each room at has four tunnels leading to the rooms to the north, east, south, and west.
 
@@ -63,57 +56,3 @@ You see a glimmer nearby.
 
 Remember, the percepts don’t tell you where the hazard or gold is, just that it’s somewhere close!
 
-## Program requirements
-
-* Your program should allow the user to play Hunt the Wumpus, as described above.
-
-* The Wumpus' cave is represented by a square grid.  The size of the grid (i.e. the numbner of rooms on one side of the square) should be specified **as a command line parameter to your program**.  Caves smaller than four rooms on a side aren't allowed.
-
-* Your code must have the following classes: `Room`, `Event`, `Wumpus`, `Bats`, `Pit`, and `Gold`.  You may create more classes if they would be helpful.
-
-* The `Event` class **must be abstract** (i.e. it must contain purely virtual functions), and the `Wumpus`, `Bats`, `Pit`, and `Gold` classes should all be derived from `Event`.  Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. Your design of the `Event` class should reflect this.
-
-* **You must use the `Event` classes polymorphically.**  In other words, your `Room` class may only contain a member of the `Event` class but not members of the `Wumpus`, `Bats`, `Pit`, or `Gold` classes.
-
-* Each `Room` contains *at most* one `Event`, but it may not contain any `Event`.  The design of your `Room` class should reflect this.
-
-* The grid representing your cave should be implemented using the `std::vector` class.
-
-## Hints
-
-* Polymorphism only works when you are working with references or pointers.  If you use the value of an object directly, it may not select the correct member function.
-
-* Hunt the Wumpus is a game all about hiding information from the player, which might make it hard to debug! To get around this problem, you might want to create a debugging-only map display so that you can tell exactly what’s in the cave while you’re testing your program. Just make sure you disable this before submitting the assignment!
-
-* Hunt the Wumpus is a very common introductory programming project. This assignment, however, is designed to specifically include the programming concepts you’ve seen in this class so far. It’s very likely that other versions of Hunt the Wumpus you could find do not correctly implement what’s described above.
-
-## Code style
-
-You must include a header comment for each source code file that contains a description of the file (including how to run the program, command line arguments, etc. if the file contains your `main()` function), your name, and the date.  Your code should be well commented, including header comments for *all* functions describing what the function does, its parameters, and any pre- and post-conditions for the function.  You should appropriately use whitespace, newlines, and indentation.
-
-Make sure you review the style guidelines for the course, and start trying to follow them:
-
-http://web.engr.oregonstate.edu/~hessro/files/cs162/162_style_guideline.pdf
-
-## Submitting your program
-
-To submit your program, you need to make sure the following files are committed into your git repository and pushed to your `master` branch on GitHub before the due date above:
-  * The `.cpp` file containing your application code.
-  * All of the `.hpp` and `.cpp` files containing the interface and implementation of your classes.
-  * Your `Makefile`.
-
-Do not commit any other files (other than the ones that were already in your repository at the start of the assignment).  A good way to check whether your assignment is submitted is to simply look at your repo on github.com.  If your files appear there before the deadline, they they are submitted.
-
-## Grading criteria
-
-Your program **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-This assignment is worth 100 points total:
-  * 90 points: your program meets the specifications above
-  * 10 points: your code is appropriately commented and uses consistent and appropriate style
-
-Your work on this assignment will be graded by demoing it with a TA.  During your demo, you will compile and run your program for the TA and walk them through your source code, describing to them how it works.  It'll be your responsibility to sign up for a 10-minute demo slot with a TA by the demo due date above.  **You will receive a zero on the assignment if you don't demo it with a TA by the demo due date.**
-
-## Extra credit
-
-For 10 points of extra credit, you can implement an AI class that plays the game for you.  This AI class should use the same interface to the game that the player does.  That is, it should use percepts to learn about the world and make decisions.

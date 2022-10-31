@@ -1,7 +1,6 @@
 /**********************************
  * Program: gold.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: runs functions for gold class
  * Input: None
  * Output: None

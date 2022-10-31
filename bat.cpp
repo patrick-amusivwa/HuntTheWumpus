@@ -1,7 +1,6 @@
 /**********************************
  * Program: bat.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ *
  * Description: runs functions for bat class
  * Input: None
  * Output: None

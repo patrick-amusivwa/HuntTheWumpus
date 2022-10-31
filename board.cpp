@@ -1,7 +1,6 @@
 /**********************************
  * Program: board.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ *
  * Description: runs functions for board class and runs the game
  * Input: None
  * Output: None

@@ -1,7 +1,6 @@
 /**********************************
  * Program: pit.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: Holds functions for pit class
  * Input: None
  * Output: None

@@ -1,7 +1,6 @@
 /**********************************
  * Program: main.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: runs the game and loops it
  * Input: None
  * Output: None

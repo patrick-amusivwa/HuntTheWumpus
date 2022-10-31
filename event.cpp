@@ -1,7 +1,6 @@
 /**********************************
  * Program: event.hpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: runs functions for event class
  * Input: None
  * Output: None

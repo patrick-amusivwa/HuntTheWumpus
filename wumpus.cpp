@@ -1,7 +1,6 @@
 /**********************************
  * Program: wumpus.cpp
- * Author: Sam Young
- * Date: 3/5/2017
+ 
  * Description: functions for wumpus
  * Input: None
  * Output: None

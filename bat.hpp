@@ -1,7 +1,6 @@
 /**********************************
  * Program: bat.hpp
- * Author: Sam Young
- * Date: 3/5/2017
+ 
  * Description: Holds functions for bat class
  * Input: None
  * Output: None

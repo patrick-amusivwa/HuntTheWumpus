@@ -1,7 +1,6 @@
 /**********************************
  * Program: evemt.hpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: Holds functions for evemt class
  * Input: None
  * Output: None

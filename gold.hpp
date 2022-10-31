@@ -1,7 +1,6 @@
 /**********************************
  * Program: gold.hpp
- * Author: Sam Young
- * Date: 3/5/2017
+ * 
  * Description: Holds functions for gold class
  * Input: None
  * Output: None

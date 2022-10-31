@@ -1,7 +1,6 @@
 /**********************************
  * Program: board.hpp
- * Author: Sam Young
- * Date: 3/5/2017
+ *
  * Description: Holds functions for board class
  * Input: None
  * Output: None
